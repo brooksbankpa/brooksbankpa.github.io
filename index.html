@@ -1,12 +1,191 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Webpage of Peter Brooksbank</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Homepage</title>
+    <style>
+        /* Basic CSS for a clean look */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #8B8878;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: lavender;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+        header p {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        /* Styling for the research interests list */
+.research-interests-list {
+    text-align: center; /* This will center the inline-block list items */
+    padding-left: 0;   /* Remove default left padding of ul for better centering */
+    list-style: none; /* Temporarily remove default list style to re-add later if needed */
+    margin-top: 20px; /* Adjust vertical spacing above the list if needed */
+    margin-bottom: 20px; /* Adjust vertical spacing below the list if needed */
+}
+
+.research-interests-list li {
+    display: inline-block; /* Makes list items appear on a single line */
+    margin: 0 15px; /* Adjusts horizontal space between items (0 top/bottom, 15px left/right) */
+    list-style-type: disc; /* Ensures the bullet is visible */
+    /* To ensure bullets show up correctly when centered,
+       sometimes you need to explicitly declare list-style on the li,
+       and remove default padding from the ul. */
+}
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            border: 3px solid #3498db;
+        }
+        section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        section h2 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-
 <body>
-</body>
+    <div class="container">
+        <header>
+            <img src="profile.jpeg" alt="Your Name" class="profile-pic">
+            <h1>Peter Brooksbank</h1>
+            <p>Professor of Mathematics</p>
+            <p>Bucknell University</p>
+            <p><a href="mailto:pbrooksb@bucknell.edu">pbrooksb@bucknell.edu</a> &nbsp&nbsp|&nbsp&nbsp 
+                <a href="cv.pdf">CV</a></p>
+            </header>
 
+        <section id="about">
+            <h3>Welcome!</h3>
+            <p>
+            I am a mathematician at Bucknell University &mdash; <i>'Ray Bucknell!</i> 
+            <br><br>
+            My bachelors and masters degrees are from the University of Sheffield (UK) and my doctrate 
+            from the University of Oregon. 
+            <br>
+            I enjoy my friends, cycling, coffee, reading, squash, teaching and doing math(s), 
+            watching Liverpool, and a spot of cooking.
+            </p>
+        </section>
+
+        <section id="research">
+            <h3>Research Interests</h3>
+            Here are my primary research areas:
+            <ul class="research-interests-list">
+                <li>&clubs; Group Theory &nbsp &nbsp </li>
+                <li>&diams; Algebraic Algorithms &nbsp &nbsp </li>
+                <li>&hearts; Tensors &nbsp &nbsp</li>
+                <li>&spades; Discrete Geometry</li>
+            </ul>
+            More information can be found on my <a href="https://github.com/galois60">GitHub</a> page.
+        </section>
+
+        <section id="publications">
+            <h3>Selected Recent Publications</h3>
+
+            Information about other publications can be found on 
+            my <a href="https://mathscinet-ams-org.ezproxy.bucknell.edu/mathscinet/author?authorId=321878">MathSciNet</a>
+            and <a href="https://scholar.google.com/citations?user=jBhGk1sAAAAJ&hl=en">Google Scholar</a> pages.
+            <ul>
+                <li><b>PAB</b>, J. Maglione, J.B. Wilson, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021869322001855?via%3Dihub">Tensor isomorphism by conjugacy of Lie algebras</a>, 
+                    J. Algebra 604 (2022), 790&mdash;807.<li> 
+                <!-- <li><b>PAB</b>, <a href="https://www.ams.org/books/conm/764/">On the ranks of string C-groups for symplectic and orthogonal groups</a>, 
+                    Contemp. Math 764 (2021), 31&mdash;41. </li> -->
+                <!-- <li><b>PAB</b>, Y. Li, Y. Qiao, J.B. Wilson, <a href="https://mathscinet-ams-org.ezproxy.bucknell.edu/mathscinet/article?mr=4140908">Improved algorithms for matrix space isometry</a>, 
+                    LIPIcs. Leib. Int. Proc. Inf., 173 (2021), 15pp.<li> -->
+                <li><b>PAB</b>, J.T. Ferrara, D. Leemans, <a href="https://link.springer.com/article/10.1007/s00454-019-00083-0">Orthogonal groups acting on polytopes of high rank</a>, 
+                    Disc, Comp. Geom 63 (2020), 656&mdash;669.<li> 
+                <li><b>PAB</b>, J. Maglione, J.B. Wilson, <a href="https://www.sciencedirect.com/science/article/pii/S0021869319303734?via%3Dihub">Exact sequences of inner automorphisms of tensors</a>, 
+                    J. Algebra 545 (2020), 43&mdash;63.<li> 
+                <li><b>PAB</b>, E.A. O'Brien, J.B. Wilson, <a href="https://www.ams.org/journals/tran/2019-372-11/S0002-9947-2019-07884-4/">
+                    Testing isomorphism of graded algebras</a>, 
+                    Trans. Amer. Math. Soc. 372 (2019), 8067&mdash;8090.<li>
+                <li><b>PAB</b>, D. Leemans, <a href="https://www.ams.org/journals/proc/2019-147-12/S0002-9939-2019-14666-9/">
+                    Rank reduction of string C-group representations</a>, 
+                    Proc. Amer. Math. Soc. 147 (2019), 5421&mdash;5426.<li>
+            </ul>
+        </section>
+
+        <section id="teaching">
+            <h3>Teaching</h3>
+            I am on sabbatical in Autumn 2025. Courses for Spring 2026 will be posted when I know what they are.
+        </section>
+
+        <section id="news">
+            <h3>News & Updates</h3>
+            <ul>
+                <li><b>&clubs;&nbsp [June 27, 2026]</b>&nbsp An update of my preprint with James Wilson and Martin Kassabov 
+                    on <a href="https://arxiv.org/abs/2408.17425">Detecting null patterns in 
+                        tensor data</a> is available on arXiv.
+                </li>
+                <li><b>&clubs;&nbsp [February 3, 2026]</b>
+                    A preprint on <a href="https://arxiv.org/abs/2502.01138">Categorification of characteristic structures</a>
+                    coauthored with Heiko Dietrich, E.A. O'Brien, Joshua Maglione, and James Wilson 
+                    is available on arXiv.
+                </li>
+                </ul>
+        Other preprints can be found on <a href="https://arxiv.org">arXiv</a>.
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Peter A. Brooksbank. Last updated: July 8, 2025</p>
+            <p>Built with <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+        </footer>
+    </div>
+</body>
 </html>
